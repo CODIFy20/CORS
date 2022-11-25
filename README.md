@@ -10,12 +10,7 @@ XXE injection also known as XML external entity injection. IT is a type of back 
 4) XXE vulnerablity of attacker is exploited. 
 
 # Payloads Used 
-1) <!--?xml version="1.0" ?-->
-<!DOCTYPE replace [<!ENTITY example "Doe"> ]>
- <userInfo>
-  <firstName>John</firstName>
-  <lastName>&example;</lastName>
- </userInfo>
+1) askfnaionva;opjvcpoasmva asklnasnvoiaknlvapslva
 
 # Impact 
 XXE injection vulnerablity basically works on data in use and transit data. It can cause the loss of sensitive info of an organisation or an individual. 
